@@ -18,7 +18,7 @@ SELECT DISTINCT
   dt
 FROM `nyt-bizint-prd.enterprise.etsor_sub_sub_mapping`
 WHERE 1=1
-  and EXTRACT(dayofweek FROM DATE({{yesterday|day|str}})) = 1 --ensures that yesterday is a Monday
+  and EXTRACT(dayofweek FROM DATE({{yesterday|day|str}})) = 1 --ensures that yesterday is a Sunday
   and date(_PARTITIONTIME) between {{91 days ago|day|str}} and {{yesterday|day|str}} --lookback period is 90 days from yesterday 
   AND financial_entitlement_group LIKE '%Wirecutter%'
 )
