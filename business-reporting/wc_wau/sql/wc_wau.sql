@@ -11,7 +11,7 @@ with user_base_table as (
         , ut.user_id
     from `nyt-bigquery-beta-workspace.wirecutter_data.user_type` ut
     left join `nyt-bigquery-beta-workspace.wirecutter_data.channel` c using(pageview_id)
-    where EXTRACT(dayofweek FROM date_sub(relative_date, interval 1 day)) = 1 --ensures that yesterday is a Monday
+    where EXTRACT(dayofweek FROM date_sub(relative_date, interval 1 day)) = 1 --ensures that yesterday is a Sunday
   and ut.date between date_sub(relative_date, interval 91 day) and date_sub(relative_date, interval 1 day) --lookback period is 90 days from yesterday 
 )
 
