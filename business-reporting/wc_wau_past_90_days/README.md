@@ -2,7 +2,7 @@
 WC WAU by channel with last 90 days trend
 
 ## Purpose
-The goal of this repo is to track the # of WC-entitled Weekly Active Users onsite for any given week, by session channel and by user type (aka. entitlement). In addition to the week's WAU counts, there is also a lookback period of 90 days that is used to calculate ceiling/floor/outlier ranges to help isolate if trends are truely meaningful. 
+The goal of this repo is to track the # of WC-entitled Weekly Active Users onsite (i.e. subs only) for any given week, by session channel and by user type (aka. entitlement). In addition to the week's WAU counts, there is also a lookback period of 90 days that is used to calculate ceiling/floor/outlier ranges to help isolate if trends are truely meaningful. 
 
 
 This repo will provide the following metrics:
